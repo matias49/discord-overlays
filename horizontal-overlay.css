@@ -1,0 +1,55 @@
+body {
+    overflow: hidden;
+}
+
+.voice-container .voice-states {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: row-reverse;
+    justify-content: center
+}
+
+
+.voice-container .voice-states .voice-state {
+    height: unset;
+    margin: 0;
+    float: unset;
+    margin-left: 0.5rem;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.voice-container .voice-states .voice-state .user {
+    padding: 0;
+    float: unset;
+    display: flex;
+    border-radius: 0;
+    width: 100%;
+}
+
+.voice-container .voice-states .voice-state .avatar {
+    opacity: 0.6;
+    transition: opacity 0.2s;
+    border-radius: 0;
+    border-width: 0;
+    float: unset;
+    margin: 0;
+    width: 80px;
+    height: auto;
+    border: 0;
+}
+
+.voice-container .voice-states .voice-state .avatar.speaking {
+    outline: 4px solid #43b581;
+    outline-offset: -4px;
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+.voice-container .voice-states .voice-state .user .name {
+    flex: 1;
+    text-align: center;
+    border-radius: 0;
+}

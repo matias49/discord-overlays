@@ -1,0 +1,76 @@
+html {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+    height: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+#app-mount {
+    flex: 1;
+}
+
+.voice-container .voice-states {
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+    flex-direction: column-reverse;
+    justify-content: center
+}
+
+
+.voice-container .voice-states .voice-state {
+    height: unset;
+    margin: 0;
+    float: unset;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 2.5em;
+}
+
+.voice-container .voice-states .voice-state .user {
+    padding: 0;
+    float: unset;
+    display: flex;
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+    align-items: stretch;
+    background-color: rgba(30, 33, 36, 0.95);
+}
+
+.voice-container .voice-states .voice-state .avatar {
+    opacity: 0.6;
+    transition: opacity 0.2s;
+    border-radius: 0;
+    border-width: 0;
+    float: unset;
+    margin: 0;
+    width: 40px;
+    height: auto;
+    border: 0;
+}
+
+.voice-container .voice-states .voice-state .avatar.speaking {
+    outline: 2px solid #43b581;
+    outline-offset: -2px;
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+.voice-container .voice-states .voice-state .user .name {
+    flex: 1;
+    text-align: center;
+    border-radius: 0;
+    background-color: transparent !important;
+    align-self: center;
+}
